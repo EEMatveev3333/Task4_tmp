@@ -64,6 +64,9 @@ public class Main {
 
         ////////////////////////////////////////
         // 5 task
+        //5 random. Создайте бин типа int, который при каждом его запросе возвращает новое случайное значение в диапазоне от 0 до 99.  При этом необходимо обеспечить, чтобы:
+        //1.     Минимальное и максимальное значения задавались бинами из задачи 4
+        //2.     Возвращаемые им числа не повторялись до тех пор, пока не использованы все значения в диапазоне от минимального до максимального.
         Integer Shuffle = context
                 .getBean("RandomIntWithConditions",Integer.class);
         //.GetStrBean();
@@ -78,9 +81,25 @@ public class Main {
                 .getBean("RandomIntWithConditions",Integer.class);
         //.GetStrBean();
         System.out.println("Shuffle_3pass - " + Shuffle);
+
+        Shuffle = context
+                .getBean("RandomIntWithConditions",Integer.class);
+        //.GetStrBean();
+        System.out.println("Shuffle_4pass - " + Shuffle);
+
+        Shuffle = context
+                .getBean("RandomIntWithConditions",Integer.class);
+        //.GetStrBean();
+        System.out.println("Shuffle_5pass - " + Shuffle);
         ////////////////////////////////////////
         // 6 task
-
+        /*
+        6 Отзывы. Создайте класс «Отзыв», состоящий из текста отзыва в виде строки и целочисленной оценки.
+        Далее создайте три бина типа «Отзыв» со следующими значениями:
+        1.     Текст: «Очень хорошо». Оценка: 4
+        2.     Текст: «Сойдёт». Оценка:3
+        3.     Текст: «Сложно сказать». Оценка устанавливается бином random задачи 5
+        */
         ////////////////////////////////////////
         // 7 task
 
