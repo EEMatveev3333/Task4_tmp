@@ -1,5 +1,6 @@
 package org.example;
 import java.util.function.Predicate;
+/*
 public class PredicateExample implements Predicate<Integer>{
     @Override
     public boolean test(Integer integer) {
@@ -7,3 +8,4 @@ public class PredicateExample implements Predicate<Integer>{
 
     }
 }
+*/

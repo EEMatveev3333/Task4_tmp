@@ -50,10 +50,10 @@ public class StringBean {
         return new Integer(this.Min_order);
     };
 
-    @Bean("GetPredicateInteger")
+/*    @Bean("GetPredicateInteger")
     Predicate<Integer> GetPredicateInteger(){
         return new PredicateExample();
-    };
+    };*/
 
     @Bean("GetPredicateInteger2")
     Predicate<Integer> GetPredicateInteger2(){
@@ -62,7 +62,7 @@ public class StringBean {
     };
 
 
-    @Bean("RandomIntWithConditions")
+    @Bean("random")
     @DependsOn({"max","min"})
     @Scope("prototype")
     Integer RandomIntWithConditions(Integer max, Integer min)
