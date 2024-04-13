@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e656330d-4b72-4fc8-8b45-d0413fa78033" name="Changes" comment="Base commit - 5 tasks complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Otzuv.java" afterDir="false" />
+    <list default="true" id="e656330d-4b72-4fc8-8b45-d0413fa78033" name="Changes" comment="Base commit - 6 tasks complete">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OtzuvOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PredicateExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PredicateExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StringBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StringBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Otzuv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Otzuv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1712550924420" duration="712000" />
       <workItem from="1712551657046" duration="218000" />
       <workItem from="1712551895096" duration="6563000" />
-      <workItem from="1712653240819" duration="20369000" />
+      <workItem from="1712653240819" duration="31275000" />
     </task>
     <task id="LOCAL-00001" summary="Base commit - Empty project">
       <option name="closed" value="true" />
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712704306931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Base commit - 6 tasks complete">
+      <option name="closed" value="true" />
+      <created>1712752810273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712752810273</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,14 +163,15 @@
     <MESSAGE value="Base commit - Empty project" />
     <MESSAGE value="Base commit - 4 tasks complete" />
     <MESSAGE value="Base commit - 5 tasks complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base commit - 5 tasks complete" />
+    <MESSAGE value="Base commit - 6 tasks complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base commit - 6 tasks complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>116</line>
+          <line>125</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

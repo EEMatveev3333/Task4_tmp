@@ -48,12 +48,20 @@ public class Otzuv {
 
     @Bean("bean3_Task6")
     @DependsOn("random")
-    @Scope("prototype")
+    //@Scope("prototype")
     Otzuv Otzuv3(@Autowired Integer random){
         //return new Integer(5);
         return new Otzuv("Сложно сказать",random);
     };
 
+
+    @Bean("bean_Task7")
+    @DependsOn({"random","bean1_Task6","bean2_Task6","bean3_Task6"})
+        //@Scope("prototype")
+    Otzuv Task7(@Autowired Integer random){
+        //return new Integer(5);
+        return new Otzuv("Сложно сказать",random);
+    };
             /*
         6 Отзывы. Создайте класс «Отзыв», состоящий из текста отзыва в виде строки и целочисленной оценки.
         Далее создайте три бина типа «Отзыв» со следующими значениями:

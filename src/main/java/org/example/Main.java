@@ -97,7 +97,15 @@ public class Main {
         // 7 task
         // 7 Лучший отзыв. Создайте бин типа «Отзыв», который будет возвращать тот из созданных в задаче 6 бинов, который имеет самую высокую оценку на момент запроса бина.
         System.out.println("7 task");
-        System.out.println(Arrays.toString(context.getBeanNamesForType(Otzuv.class)));
+        Otzuv otzuv7Task = context.getBean("bean_Task7",Otzuv.class);
+        System.out.println("bean_Task7 - " + otzuv7Task);
+
+        Integer otzuv7TaskCnt = context.getBean("bean_Task7_cnt",Integer.class);
+        System.out.println("bean_Task7_cnt - " + otzuv7TaskCnt);
+
+
+
+//        System.out.println(Arrays.toString(context.getBeanNamesForType(Otzuv.class)));
 //        for (BeansInst : context.getBean(Otzuv.class))
 //            {}
         ////////////////////////////////////////
