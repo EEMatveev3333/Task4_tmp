@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.function.Predicate;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -110,6 +111,62 @@ public class Main {
 //            {}
         ////////////////////////////////////////
         // 8 task
+        System.out.println("8 task");
+        TrafficLight tf = context.getBean(TrafficLight.class);
+        tf.next();
+        tf.next();
+        tf.next();
+        tf.next();
+        tf.next();
+        tf.next();
+        tf.next();
+        tf.next();
+
+        System.out.println(context.getBean("TrafficLightCnt",String.class));
+        System.out.println(context.getBean("TrafficLightArrayString",String.class));
+
+//        long start =
+//                System.currentTimeMillis();
+        System.out.println(System.currentTimeMillis() / 1000);
+
+        Date currentDate = new Date();
+        System.out.println(currentDate);
+
+        Date currentTime = new Date();
+        System.out.println(currentTime);
+
+        System.out.println(LIB.GetCurrentTimeInSec(currentDate));
+        System.out.println(LIB.GetCurrentTimeInSec(currentTime));
+        System.out.println(currentTime.getTime());
+        System.out.println("---");
+        System.out.println(currentTime.getHours());
+        System.out.println(currentTime.getMinutes());
+        System.out.println(currentTime.getSeconds());
+        System.out.println("--");
+        System.out.println( currentTime.getHours() * 3600 + currentTime.getMinutes() * 60 + currentTime.getSeconds() );
+
+        System.out.println(LIB.GetCurrentTimeInSec(currentTime));
+        System.out.println("-");
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,0,0));
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,0,60));
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,null,0));
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,0,null));
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,0,43200));
+        System.out.println(LIB.CurrentTimeBetweenBorder(currentTime,43200,43200));
+        //
+//        List<ColorClass> lst = context.getBean("TrafficLightList",List.class);
+//        //List lst = context.getBean("TrafficLightList",List.class);
+//        System.out.println("lst.size() - " + lst.size());
+//        lst.removeIf(sl->sl.Color == null);
+////        for (ColorClass sl : lst)
+////            if (sl.Color == null) {
+////                lst.remove(sl);
+////                break;
+////            }
+//
+//        //System.out.println("1");
+//        System.out.println("lst.size() - " + lst.size());
+
 //        8 Светофор.
 //
 //                Разработайте сущность Светофор, которая может использоваться для управления пешеходами и машинами на дороге. При вызове метода next, на экран выводится текст обозначающего текущий цвет, например, «красный» или «зелёный».
